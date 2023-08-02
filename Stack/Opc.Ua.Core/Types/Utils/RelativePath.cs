@@ -784,7 +784,7 @@ namespace Opc.Ua
                     }
 
                     // check for invalid character.            
-                    if (next == '!' || next == ':' || next == '<' || next == '>' || next == '/' || next == '.')
+                    if (next == '!' || next == ':' || next == '<' || next == '>' || next == '/' || next == '.' || next == '#')
                     {
                         throw new ServiceResultException(
                             StatusCodes.BadSyntaxError,
